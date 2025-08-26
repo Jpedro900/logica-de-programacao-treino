@@ -1,7 +1,6 @@
 # Desafios de Lógica e Estruturas de Dados
 
-Repositório para treinar lógica e estruturas de dados em Python, com evolução lenta do básico ao avançado.
-Cada desafio tem um arquivo em `desafios/` e (quando aplicável) um teste unitário em `tests/`.
+Evolução gradual em Python. Cada desafio fica em `desafios/` e os testes em `tests/` (pytest).
 
 ## ✅ Progresso (concluídos)
 - [x] Desafio 001 — Soma simples (`sum_two`)
@@ -9,46 +8,23 @@ Cada desafio tem um arquivo em `desafios/` e (quando aplicável) um teste unitá
 - [x] Desafio 003 — Contar pares (`count_evens`)
 - [x] Desafio 004 — Reverter string (`reverse_str`)
 - [x] Desafio 005 — Palíndromo básico (`is_palindrome`)
+- [x] Desafio 006 — Contar vogais (`count_vowels`)
+- [x] Desafio 007 — Remover vogais (`remove_vowels`)
+- [x] Desafio 008 — Fatorial (iterativo) (`factorial`)
+- [x] Desafio 009 — Fibonacci até n termos (`fibonacci`)
+- [x] Desafio 010 — Anagramas (`is_anagram`)
 
-## ▶️ Como rodar localmente
-1. Certifique-se de estar na raiz do repositório (onde ficam as pastas `desafios/` e `tests/`).
-2. (Primeira vez) Instale o pytest:
-   ```bash
-   py -m pip install pytest
-   ```
-3. Rode todos os testes:
-   ```bash
-   py -m pytest -q
-   ```
+## ▶️ Como rodar
+```bash
+py -m pip install pytest
+py -m pytest -q
+```
 
 ## Estrutura sugerida
 ```
-<repo-raiz>/
-├─ desafios/
-│  ├─ __init__.py
-│  ├─ desafio_001.py
-│  ├─ desafio_002.py
-│  ├─ desafio_003.py
-│  ├─ desafio_004.py
-│  └─ desafio_005.py
-├─ tests/
-│  ├─ test_desafio_001.py
-│  ├─ test_desafio_002.py
-│  ├─ test_desafio_003.py
-│  ├─ test_desafio_004.py
-│  └─ test_desafio_005.py
-├─ pytest.ini        # com 'pythonpath = .'
+<repo>/
+├─ desafios/ (desafio_001.py ... desafio_010.py)
+├─ tests/ (test_desafio_001.py ... test_desafio_010.py)
+├─ pytest.ini  # com: [pytest]\npythonpath = .
 └─ README.md
 ```
-
-## Mensagens de commit sugeridas
-- `feat: resolver Desafio 001 - Soma simples`
-- `feat: resolver Desafio 002 - Máximo de três`
-- `feat: resolver Desafio 003 - Contar pares`
-- `feat: resolver Desafio 004 - Reverter string`
-- `feat: resolver Desafio 005 - Palíndromo básico`
-- `test: adicionar testes unitários dos Desafios 001..005`
-
----
-
-> Dica: mantenha os desafios simples, com foco em clareza do código e nomes descritivos.
